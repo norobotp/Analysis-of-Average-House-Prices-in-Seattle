@@ -1,4 +1,34 @@
-# Analysis-of-Average-House-Prices-in-Seattle
-## Introduction
-Housing prices represent a crucial economic indicator that significantly influences both investment decisions and consumer behavior. In this study, we analyze a univariate time series of monthly average housing prices in Seattle, obtained from Zillow Research Data[7]
-. The data we are using reports the average monthly prices of houses between the 33rd and 67th percentiles, thus providing an indicator of the typical middle-income house price in the Seattle Metropolitan area. Although the original dataset spans from February 1996 to December 2024 with 348 records, its extensive duration and the occurrence of multiple historical events such as the Dot-Com Bubble Burst (2000–2001) and the Great Recession (2007-2009) makes comprehensive analysis extremely challenging. Therefore, we focus on the most recent decade, from January 2015 to December 2024 with 120 records, to capture current market dynamics. The plot of the sliced data is shown as below. It reveals a clear upward trend with potential seasonal patterns and significant market shifts, particularly during the 2020-2022 period. The median housing price in Seattle in the recent decade is $517,473 as shown in the below summary table.
+# 🏘️ Analysis of Average House Prices in Seattle
+
+This project explores trends and seasonality in average house prices across various neighborhoods in Seattle using time series analysis and forecasting methods.
+
+## 🔍 Overview
+We aimed to:
+- Analyze historical price data from the Seattle housing market
+- Decompose trends, seasonality, and irregular components
+- Forecast future price patterns using SARIMA and exponential smoothing models
+
+## 📈 Key Features
+- **Data preprocessing**: Handling missing values, converting timestamps, and aggregating monthly averages
+- **Decomposition**: Using STL (Seasonal and Trend decomposition using Loess)
+- **Modeling**:
+  - SARIMA (Seasonal ARIMA)
+  - ETS (Error-Trend-Seasonal models)
+  - AIC-based model selection and diagnostics
+- **Visualization**: Plots for trend, seasonality, and prediction intervals
+
+## 📁 Output
+The HTML report includes:
+- Data source description and summary statistics
+- Visual decomposition of trends and seasonal cycles
+- Model performance comparison
+- 12-month forecast of average house prices by neighborhood
+
+## ⚙️ Technologies Used
+- `R`, `forecast`, `ggplot2`, `tsibble`, `fable`, `feasts`
+- Time series forecasting and seasonal decomposition
+
+---
+
+## 💡 Motivation
+This project was conducted as part of a graduate-level course at the University of Michigan to apply modern time series forecasting tools to real estate market data and derive actionable insights on price dynamics in Seattle.
